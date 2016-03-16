@@ -1,28 +1,11 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+= Books
 
-Things you may want to cover:
+Store the books owned with name, price and quantity in stock
 
-* Ruby version
+= Transaction
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Store the in/outs of the cash register.
+When a book is selled the value is negative, and the book selected goes down in quantity. Same as the inverse.
+If the transaction is not a book. the description must be expressed manually.

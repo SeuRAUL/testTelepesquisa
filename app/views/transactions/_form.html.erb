@@ -16,12 +16,10 @@
   <% end %>
 
   <div class="form-group">
-    <%= f.label :typeOf, :class => 'control-label col-lg-2' %>
-    <div class="col-lg-10">
-      <%= f.text_field :typeOf, :class => 'form-control' %>
-    </div>
+    <%= f.select :typeOf, [['Venda', "Venda"], ['Compra', "Compra"]], :class => 'col-lg-2 selectpicker' %>
     <%=f.error_span(:typeOf) %>
   </div>
+
   <div class="form-group">
     <%= f.label :value, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
