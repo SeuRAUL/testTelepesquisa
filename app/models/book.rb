@@ -1,3 +1,3 @@
 class Book < ActiveRecord::Base
-  belongs_to :stock
+  belongs_to :transaction
 end
