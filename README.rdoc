@@ -9,3 +9,7 @@ Store the books owned with name, price and quantity in stock
 Store the in/outs of the cash register.
 When a book is selled the value is negative, and the book selected goes down in quantity. Same as the inverse.
 If the transaction is not a book. the description must be expressed manually.
+
+
+Front-End
+	twitter-bootstrap-rails
