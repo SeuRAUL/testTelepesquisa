@@ -1,0 +1,6 @@
+<h1><%= @book.name %></h1>
+<p>Price: <%= @book.price %></p>
+<p>In Sotck: <%= @book.quantity %></p>
+
+<%= link_to 'Edit', edit_book_path(@book) %> | 
+<%= link_to "Delete", @book, method: :delete, data: { confirm: "You Sure?" } %>	
