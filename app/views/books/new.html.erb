@@ -1,17 +1,23 @@
 <h1>New Book</h1>
+<form class="form-horizontal">
 <%= form_for(@book) do |f| %>
-  <div class="form">
-    <%= f.label :name %>
-    <%= f.text_field :name, class: 'form-control'  %><br/>
-
-    <%= f.label :price %>
-    <%= f.number_field :price, class: 'form-control', step: 0.01 %><br/>
-
-    <%= f.label :quantity %>
-    <%= f.number_field :quantity, class: 'form-control' %><br/>
-
+  <div class="field">
+    <%= f.label :name, class: "col-md-4 control-label" %>
+    <%= f.text_field :name  %><br/>
   </div>
+
+  <div class="field">
+    <%= f.label :price, class: "col-md-4 control-label" %>
+    <%= f.number_field :price, step: 0.01 %><br/>
+  </div>	
+
+  <div class="field">
+    <%= f.label :quantity, class: "col-md-4 control-label" %>
+    <%= f.number_field :quantity %><br/>
+  </div>
+
   <div class="actions">
-    <%= f.submit "Create", class: "btn btn-primary" %>
+    <%= f.submit "Create", class: "btn btn-primary col-md4" %>
   </div>
 <% end %>
+</form>

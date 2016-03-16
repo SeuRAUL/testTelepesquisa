@@ -1,6 +1,6 @@
 <h1>Books</h1>
 
-<%= link_to 'new', new_book_path %>
+<%= link_to 'new', new_book_path, class: 'btn btn-primary' %>
 
 <% @books.each do |book| %>
 	<h2><%= link_to book.name, book %></h2>

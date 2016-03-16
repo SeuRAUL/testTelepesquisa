@@ -2,5 +2,5 @@
 <p>Price: <%= @book.price %></p>
 <p>In Sotck: <%= @book.quantity %></p>
 
-<%= link_to 'Edit', edit_book_path(@book) %> | 
-<%= link_to "Delete", @book, method: :delete, data: { confirm: "You Sure?" } %>	
+<%= link_to 'Edit', edit_book_path(@book), class: 'btn btn-success' %> | 
+<%= link_to "Delete", @book, method: :delete, data: { confirm: "You Sure?" }, class: 'btn btn-danger' %>	
